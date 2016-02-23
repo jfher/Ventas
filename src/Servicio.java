@@ -11,13 +11,5 @@ public class Servicio extends Producto {
 		return precio;
    }
 
-	public void establecerCantidadHoras(int horas) {
-		this.cantidad = horas;
-	}
-	
-	public void establecerPrecioHora(int precio) {
-		this.precio = precio;
-	}
-
 }
 

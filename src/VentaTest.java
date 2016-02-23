@@ -35,7 +35,7 @@ public class VentaTest {
 		venta3.agregarProductoEnVenta(producto4);
 		assertEquals(60,venta3.calcularPrecioTotal());*/
 		
-	    Articulo articulo = new Articulo();
+	    Producto articulo = new Articulo();
 		articulo.establecerPrecio(10);
 		articulo.establecerCantidad(1);
 		venta.agregarProductoEnVenta(articulo);
@@ -43,11 +43,11 @@ public class VentaTest {
 		assertEquals(10, venta.calcularPrecioTotal(), 0);
 		
 		Venta venta2 = new Venta();
-		Articulo articulo2 = new Articulo();
+		Producto articulo2 = new Articulo();
 		articulo2.establecerPrecio(10);
 		articulo2.establecerCantidad(1);
 		venta2.agregarProductoEnVenta(articulo2);
-		Articulo articulo3 = new Articulo();
+		Producto articulo3 = new Articulo();
 		articulo3.establecerPrecio(15);
 		articulo3.establecerCantidad(1);
 		venta2.agregarProductoEnVenta(articulo3);
@@ -55,7 +55,7 @@ public class VentaTest {
 		assertEquals(25, venta2.calcularPrecioTotal(), 0);
 		
 		Venta venta3 = new Venta();
-		Articulo articulo4 = new Articulo();
+		Producto articulo4 = new Articulo();
 		articulo4.establecerCantidad(12);
 		articulo4.establecerPrecio(5);
 		venta3.agregarProductoEnVenta(articulo4);
@@ -63,9 +63,9 @@ public class VentaTest {
 		assertEquals(60, venta3.calcularPrecioTotal(), 0);
 		
 		Venta venta4 = new Venta();
-		Servicio servicio = new Servicio();
-		servicio.establecerCantidadHoras(2);
-		servicio.establecerPrecioHora(3);
+		Producto servicio = new Servicio();
+		servicio.establecerCantidad(2);
+		servicio.establecerPrecio(3);
 		venta4.agregarProductoEnVenta(servicio);
 		//assertEquals(6,venta4.calcularPrecioTotal());
 		assertEquals(1.2, venta4.calcularPrecioTotal(), 1);
